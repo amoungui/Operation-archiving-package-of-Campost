@@ -1,9 +1,8 @@
 
                   
-                <div id=imag align=center>
-             
-<!-- <img src="application/images/MagnifierSmall.jpg">-->
-          </div>
+<div id=imag align=center>
+        <img src="application/images/MagnifierSmall.jpg">
+</div>
  
 <div id= champ align= center>	  
     <img src="application/js/icons/campost.png">
