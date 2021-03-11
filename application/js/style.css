@@ -1,0 +1,210 @@
+/* 
+    Document   : style
+    Created on : 15 août 2012, 11:11:18
+    Author     : mbele.serge
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+ html, body {
+                  font-size: 12px; font-family: arial,sans-serif;
+                       }
+
+		#fm{
+			margin:0;
+			padding:10px 30px;
+		}
+		.ftitle{
+			font-size:14px;
+			font-weight:bold;
+			color:#666;
+			padding:5px 0;
+			margin-bottom:10px;
+			border-bottom:1px solid #ccc;
+		}
+		.fitem{
+			margin-bottom:5px;
+		}
+		.fitem label{
+			display:inline-block;
+			width:80px;
+		}
+                      .flt{
+                           float: right;
+                       }
+                      .flt1{
+                           float: right;
+                       }
+                       .flt2{
+                           float: right;
+                       }
+                       .flt3{
+                           float: right;
+                       }
+               .pitem{  
+		list-style-type:none;
+		margin:0;
+		padding:0px 0 5px 5px;
+                border-top-color: #ccc;
+	}
+	.pitem li{
+		font-size:12px;
+		line-height:18px;
+                margin: 0px;
+               
+	}
+        .pitem li a:hover{
+            background-color:#99BBE8; 
+            display:block;
+        }
+        .pitem li a{
+            text-decoration: none;
+            
+        }
+	.demo-c{
+                width:86%;
+		height:100%;
+		float:right;
+		background:#fff;
+		border:1px solid #ccc;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius: 5px;
+                margin-right: 8px;
+	}
+        #footer{
+            text-align: center;
+        }
+        
+        .lien_menu { 
+                     text-decoration: none; 
+                     font-weight: bold; float: left; margin-right: 10px; 
+                     padding: 5px; padding-left: 20px; 
+                     padding-right: 20px;
+                     border:1px solid #99BBE8;
+                     border-radius:5px;
+                    -moz-border-radius:5px;
+                    -webkit-border-radius: 5px;
+                    -moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+                    -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+        }
+         a:hover{
+            background-color: #D0E5F5;
+        }
+        .lien_menu:hover{
+                        background-color: #D0E5F5;
+        }
+        .entete { 
+            border: 1px solid #99BBE8;
+            width: auto; height: 24px;
+            padding:5px;
+            padding-bottom: 10px;
+            line-height:15px;
+            color:#15428b;
+            font-weight:bold;
+            font-size:12px;
+            background:url('application/js/default/images/datagrid_title_bg.png') repeat-x;
+            position:relative;
+            
+
+        }
+        .menu_index{
+/*            float: left;
+            width: 20%;
+            */
+        }
+        #menu{
+/*            float: left;
+            width: 20%;*/
+        }
+        
+        .corps{
+            border: 1px solid #99BBE8;
+            width: auto;
+            margin-top: 7px;
+            margin-bottom: 7px;
+            padding: 3px 3px 3px 4px;
+        }
+        .pieds_page{
+            text-align: center;
+            background:url('application/js/default/images/datagrid_title_bg.png') no-repeat;
+            border: 1px solid #99BBE8;
+            width: auto; 
+            height: 40px;
+            padding-bottom: 2px;
+            padding-top: 2px;
+            margin-top: 3px;
+        }
+        
+        
+        
+        #menu {
+/*          width: 100px;*/
+         }
+
+#menu ul {
+             padding: 0;
+/*             width: 100px;*/
+/*             border:1px solid;*/
+             margin:0px;
+            }
+
+/*On positionne les elements du menu */
+#menu ul li {
+                position:relative;
+                list-style: none; /*on enleve les icones de liste */
+               }
+
+#menu ul ul {
+                position: absolute;
+                top: 0;
+                left: 100px; /*100px correspond au décalage a droite, on décale de la taille du ul de base*/
+               }  
+
+#menu li a {
+               text-decoration: none; /* plus de soulignement pour les liens */
+              } 
+              /* On cache tous les sous menu avec la propriété display none */
+#menu ul ul {
+                position: absolute;
+                top: 0;
+                left: 100px;
+                display:none
+/*                    z-index:1;*/
+               }
+
+/*Lors du survol ,avec la souris, les sousmenu apparaissent grace a display: block */
+#menu ul.niveau1 li.sousmenu:hover ul.niveau2,
+#menu ul.niveau2 li.sousmenu:hover ul.niveau3 {
+                                                  display:block;
+                                                 }
+
+#menu a {
+            color:#000000
+           }
+
+#menu li a {
+               text-decoration: none;
+
+               display:block; 
+              }
+
+#menu ul ul li a:hover {
+                           border-left-color: #99BBE8;
+                          }
+#menu ul ul ul li a:hover {
+                              border-left-color: #99BBE8;
+}
+#champ{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
